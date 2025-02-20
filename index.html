@@ -14,7 +14,7 @@
 </head>
 <body>
     <header>
-        <h1 class="title">Formulário de Inscrição</h1>
+        <h1 class="title">Formulário de Inscrição para Academia</h1>
     </header>
     <main>
         <!--
@@ -53,12 +53,19 @@
             <input class="input_textbox" type="text" id="endereco" name="endereco" alt="Preencha seu endereço" placeholder="Rua - n°, bairro, cidade - UF"  required>
 
             <label class="form_label">Plano de Treinamento*</label>
-            <input class="input_radio" type="radio" id="nivel1" name="nivel" value="basico" alt="Preencha seu plano de treinamento"  required>
-            <label class="input_label" for="nivel1">Básico</label>
-            <input class="input_radio" type="radio" id="nivel2" name="nivel" value="intermediario" alt="Preencha seu plano de treinamento"  required>
-            <label class="input_label" for="nivel2">Intermediário</label>
-            <input class="input_radio" type="radio" id="nivel3" name="nivel" value="avancado" alt="Preencha seu plano de treinamento"  required>
-            <label class="input_label" for="nivel3">Avançado</label>
+            <input class="input_radio" type="radio" id="basico" name="treino" value="basico" alt="Preencha seu plano de treinamento"  required>
+            <label class="input_label" for="basico">Básico. (3 vezes por semana)</label>
+            <input class="input_radio" type="radio" id="intermediario" name="treino" value="intermediario" alt="Preencha seu plano de treinamento"  required>
+            <label class="input_label" for="intermediario">Intermediário (5 vezes por semana)</label>
+            <input class="input_radio" type="radio" id="avancado" name="treino" value="avancado" alt="Preencha seu plano de treinamento"  required>
+            <label class="input_label" for="avancado">Avançado (7 vezes por semana)</label>
+
+            <label class="form_label">Observações*</label>
+            <input class="input_textbox" type="text" name="observacoes" id="observacoes" alt="Preencha suas observações" placeholder="Digite suas observações"></textarea>
+
+            <label class="form_label">Termos e Condições*</label>
+            <input class="input_radio" type="checkbox" id="termos" name="termos" alt="Aceite os termos e condições"  required>
+            <label class="input_label" for="termos">Aceito os termos e condições</label>
 
             <div class="form_footer">
                 <button class="form_button" type="submit">Inscrever-se</button>

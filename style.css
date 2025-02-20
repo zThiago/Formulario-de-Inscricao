@@ -43,7 +43,7 @@ footer {
     padding: 30px;
     border-radius: 10px;
     box-shadow: #c2c2c2 0px 0px 10px;
-    width: 40vh;
+    width: 50vh;
     height: 70vh;
     scroll-behavior: smooth;
     overflow: auto;
@@ -90,7 +90,7 @@ footer {
     border-radius: 5px;
     width: 200px;
     box-sizing: border-box;
-    width: 35vh;
+    width: 45vh;
 }
 
 .input_textbox:focus {
@@ -111,7 +111,7 @@ footer {
     border-radius: 5px;
     width: 200px;
     box-sizing: border-box;
-    width: 35vh;
+    width: 45vh;
 }
 
 .input_select:focus {
@@ -157,6 +157,16 @@ footer {
     transition: all 0.3s ease;
     background-color: #007BFF;
     border-color: #fff;
+}
+
+.input_textarea {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+    box-sizing: border-box;
+    width: 35vh;
 }
 
 .form_footer{
