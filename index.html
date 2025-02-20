@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Inscrição</title>
+    <link rel="stylesheet" href="style.css">
+    <!--
+    Definindo os metadados do site para o Google
+    -->
+    <meta name="author" content="Thiago Cunha Ferreira">
+    <meta property="og:title" content="Formulário de Inscrição - Atividade 01">
+    <meta property="og:description" content="Site de inscrição para cursos de TI | Site de Atividade 01 para a disciplina de Programação Orientada a Objetos para Web 2025">
+</head>
+<body>
+    <header>
+        <h1 class="title">Formulário de Inscrição</h1>
+    </header>
+    <main>
+        <!--
+        Definindo o formulário
+        -->
+        <form class="form">
+            <P class="form_title">Dados de Inscrição</P>
+            <!--
+            Definindo os inputs, para que eles sejam preenchidos, usando o atributo required para que eles sejam obrigatórios
+            usei alt para dar uma dica ao usuário para preencher o campo e acessibilidade
+            usei oninvalid para dar um aviso ao usuário quando o campo estiver vazio
+            -->
+            <label class="form_label">Nome*</label>
+            <input class="input_textbox" type="text" id="nome" placeholder="Informe seu nome" name="nome" alt="Preencha seu nome"  required>
+
+            <label class="form_label">Sobrenome*</label>
+            <input class="input_textbox" type="text" id="sobrenome" placeholder="Informe seu sobrenome" name="sobrenome" alt="Preencha seu sobrenome"  required>
+
+            <label class="form_label">Data de Nascimento*</label>
+            <input class="input_textbox" type="date" id="nascimento" name="nascimento" alt="Preencha sua data de nascimento"  required>
+            
+            <label class="form_label">Gênero*</label>
+            <select class="input_select" id="genero" name="genero"  required>
+                <option value="masculino">Homem</option>
+                <option value="feminino">Mulher</option>
+                <option value="outro">Prefiro não dizer</option>
+            </select>
+
+            <label class="form_label">Email*</label>
+            <input class="input_textbox" type="email" id="email" name="email" alt="Preencha seu email" placeholder="seuemail@exemplo.com"  required>
+
+            <label class="form_label">Telefone*</label>
+            <input class="input_textbox" type="tel" id="telefone" name="telefone" alt="Preencha seu telefone" placeholder="00000-0000"  required>
+
+            <label class="form_label">Endereço*</label>
+            <input class="input_textbox" type="text" id="endereco" name="endereco" alt="Preencha seu endereço" placeholder="Rua - n°, bairro, cidade - UF"  required>
+
+            <label class="form_label">Plano de Treinamento*</label>
+            <input class="input_radio" type="radio" id="nivel1" name="nivel" value="basico" alt="Preencha seu plano de treinamento"  required>
+            <label class="input_label" for="nivel1">Básico</label>
+            <input class="input_radio" type="radio" id="nivel2" name="nivel" value="intermediario" alt="Preencha seu plano de treinamento"  required>
+            <label class="input_label" for="nivel2">Intermediário</label>
+            <input class="input_radio" type="radio" id="nivel3" name="nivel" value="avancado" alt="Preencha seu plano de treinamento"  required>
+            <label class="input_label" for="nivel3">Avançado</label>
+
+            <div class="form_footer">
+                <button class="form_button" type="submit">Inscrever-se</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p class="footer_text">Formulário de Inscrição - Aluno Thiago Cunha Ferreira.</p>
+    </footer>
+</body>
+</html>
